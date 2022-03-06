@@ -7,7 +7,7 @@ let myClock = document.querySelector("#myClock")
 
 function showTime() {
     let today = new Date();
-    let time = ("0" + today.getHours()).substr(-2) + ":" + ("0" + today.getMinutes()).substr(-2) + ":" + ("0" + today.getSeconds()).substr(-2);
+    let time = ("0" + today.getHours()).slice(-2) + ":" + ("0" + today.getMinutes()).slice(-2) + ":" + ("0" + today.getSeconds()).slice(-2);
     let dayy = today.getDay();
     let day = weekday[dayy];
     let dayTime = time + " " + day;
